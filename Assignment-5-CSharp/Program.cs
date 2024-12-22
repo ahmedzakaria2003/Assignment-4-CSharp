@@ -63,7 +63,36 @@
             //Console.Write($"Reverse String is : {reverseString} ");
             //Console.ReadLine();
             #endregion
+            #region q6
 
+            Console.Write("Input starting number of range: ");
+            int startRange = int.Parse(Console.ReadLine());
+
+            Console.Write("Input ending number of range: ");
+            int endRange = int.Parse(Console.ReadLine());
+            Console.WriteLine($"The prime numbers between {startRange} and {endRange} are:");
+            for (int i = startRange; i <= endRange; i++)
+            {
+                if (IsPrime(i))
+                {
+                    Console.Write(i + " ");
+                }
+            }
         }
+        static bool IsPrime(int number)
+        {
+            if (number < 2)
+                return false;
+
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if (number % i == 0)
+                    return false;
+            }
+            return true;  
+        }
+        #endregion
+
     }
-}
+    }
+
