@@ -30,27 +30,27 @@
             #endregion
             #region q3
 
-            Console.WriteLine("Enter an integer: ");
-            int num;
-            if (int.TryParse(Console.ReadLine(), out num))
-            {
-                for (int i = 2; i <= num; i += 2)
-                {
-                    Console.Write(i + " ");
+            //Console.WriteLine("Enter an integer: ");
+            //int num;
+            //if (int.TryParse(Console.ReadLine(), out num))
+            //{
+            //    for (int i = 2; i <= num; i += 2)
+            //    {
+            //        Console.Write(i + " ");
 
-                }
+            //    }
 
-            }
+            //}
 
 
             #endregion
             #region q4
-            //Console.WriteLine("enter first int");
-            //int number01 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("enter second int");
-            //int number02 = int.Parse(Console.ReadLine());
-            //double result = Math.Pow(number01, number02);
-            //Console.WriteLine($"{result}");
+            Console.WriteLine("enter first int");
+            int number01 = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter second int");
+            int number02 = int.Parse(Console.ReadLine());
+            double result = Math.Pow(number01, number02);
+            Console.WriteLine($"{result}");
             #endregion
         }
     }
