@@ -191,28 +191,67 @@ namespace Assignment_5_CSharp
             #endregion
             #region q13
 
-            int[] array = { 1, 2, 3, 2, 1, 5, 1, 3, 5, 2, 2 };
-            int[] visited = new int[array.Length];
+            //    int[] array = { 1, 2, 3, 2, 1, 5, 1, 3, 5, 2, 2 };
+            //    int[] visited = new int[array.Length];
 
-            Console.WriteLine("Duplications in matrix:");
+            //    Console.WriteLine("Duplications in matrix:");
 
-            for (int i = 0; i < array.Length; i++)
+            //    for (int i = 0; i < array.Length; i++)
+            //    {
+            //        if (visited[i] == 1)
+            //            continue;
+
+            //        int count = 1;  
+            //        for (int j = i + 1; j < array.Length; j++)
+            //        {
+            //            if (array[i] == array[j])
+            //            {
+            //                count++;
+            //                visited[j] = 1; 
+            //            }
+            //        }
+
+            //        Console.WriteLine($"Elment {array[i]} duplicated {count} times.");
+            //    }
+            //}
+            #endregion
+            #region q14
+            //int[] array = { 12, 3, 7, 9, 15, 6, 19, 5 };
+
+            //int min = array[0];
+            //int max = array[0];
+
+            //foreach (int num in array)
+            //{
+            //    if (num < min)
+            //        min = num;
+            //    if (num > max)
+            //        max = num;
+            //}
+
+            //Console.WriteLine($"Minimum element in the array: {min}");
+            //Console.WriteLine($"Maximum element in the array: {max}");
+            #endregion
+            #region q15
+            int[] array = { 12, 35, 1, 10, 34 };
+                     int largest = array[0];  
+            int secondLargest = int.MinValue;
+
+            foreach (int num in array)
             {
-                if (visited[i] == 1)
-                    continue;
-
-                int count = 1;  
-                for (int j = i + 1; j < array.Length; j++)
+                if (num > largest)
                 {
-                    if (array[i] == array[j])
-                    {
-                        count++;
-                        visited[j] = 1; 
-                    }
+                    secondLargest = largest;
+                    largest = num;
                 }
-
-                Console.WriteLine($"Elment {array[i]} duplicated {count} times.");
+                else if (num > secondLargest && num != largest)
+                {
+                    secondLargest = num;
+                }
             }
+
+           
+                Console.WriteLine($"The second largest element is: {secondLargest}");
         }
         #endregion
     }
