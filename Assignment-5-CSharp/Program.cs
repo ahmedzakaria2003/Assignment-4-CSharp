@@ -135,10 +135,17 @@
             //    }
             #endregion
             #region q9
-            string inputString = "Hello Developer";
-            string substring = inputString.Substring(7, 4);
-            Console.WriteLine(substring);
+            //string inputString = "Hello Developer";
+            //string substring = inputString.Substring(7, 4);
+            //Console.WriteLine(substring);
+            #endregion
+            #region q10 
+            string firstString = "Hello";
+            string secondString = "World";
+            string combinedString = firstString + " " + secondString;
+
+            Console.WriteLine(combinedString);
             #endregion
         }
-        }
+    }
     }
