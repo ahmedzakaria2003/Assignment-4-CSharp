@@ -233,27 +233,58 @@ namespace Assignment_5_CSharp
             //Console.WriteLine($"Maximum element in the array: {max}");
             #endregion
             #region q15
-        //    int[] array = { 12, 35, 1, 10, 34 };
-        //             int largest = array[0];  
-        //    int secondLargest = int.MinValue;
+            //    int[] array = { 12, 35, 1, 10, 34 };
+            //             int largest = array[0];  
+            //    int secondLargest = int.MinValue;
 
-        //    foreach (int num in array)
+            //    foreach (int num in array)
+            //    {
+            //        if (num > largest)
+            //        {
+            //            secondLargest = largest;
+            //            largest = num;
+            //        }
+            //        else if (num > secondLargest && num != largest)
+            //        {
+            //            secondLargest = num;
+            //        }
+            //    }
+
+
+            //        Console.WriteLine($"The second largest element is: {secondLargest}");
+            //}
+            #endregion
+            #region q16
+        //    Console.WriteLine("Enter the size of the array:");
+        //    int size = int.Parse(Console.ReadLine());
+
+        //    int[] array = new int[size];
+        //    Console.WriteLine("Enter the elements of the array:");
+        //    for (int i = 0; i < size; i++)
         //    {
-        //        if (num > largest)
+        //        array[i] = int.Parse(Console.ReadLine());
+        //    }
+
+        //    int maxDistance = 0;
+        //    for (int i = 0; i < size; i++)
+        //    {
+        //        for (int j = i + 1; j < size; j++)
         //        {
-        //            secondLargest = largest;
-        //            largest = num;
-        //        }
-        //        else if (num > secondLargest && num != largest)
-        //        {
-        //            secondLargest = num;
+        //            if (array[i] == array[j])
+        //            {
+        //                int distance = j - i;
+        //                if (distance > maxDistance)
+        //                {
+        //                    maxDistance = distance;
+        //                }
+        //            }
         //        }
         //    }
 
-           
-        //        Console.WriteLine($"The second largest element is: {secondLargest}");
+        //    Console.WriteLine($"The longest distance between two equal cells is: {maxDistance}");
         //}
         #endregion
     }
     }
+    
 
