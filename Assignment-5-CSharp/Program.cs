@@ -158,37 +158,63 @@ namespace Assignment_5_CSharp
             //Console.WriteLine(sum);
             #endregion
             #region q12
-            int[] array1 = { 1, 3, 5, 7 };
-            int[] array2 = { 2, 4, 6, 8};
+            //int[] array1 = { 1, 3, 5, 7 };
+            //int[] array2 = { 2, 4, 6, 8};
 
-            int[] mergedArray = new int[array1.Length + array2.Length];
+            //int[] mergedArray = new int[array1.Length + array2.Length];
 
-            int i = 0, j = 0, k = 0;
+            //int i = 0, j = 0, k = 0;
 
-            while (i < array1.Length && j < array2.Length)
-            {
-                if (array1[i] < array2[j])
-                    mergedArray[k++] = array1[i++];
-                else
-                    mergedArray[k++] = array2[j++];
-            }
+            //while (i < array1.Length && j < array2.Length)
+            //{
+            //    if (array1[i] < array2[j])
+            //        mergedArray[k++] = array1[i++];
+            //    else
+            //        mergedArray[k++] = array2[j++];
+            //}
 
-            while (i < array1.Length)
-            {
-                mergedArray[k++] = array1[i++];
-            }
+            //while (i < array1.Length)
+            //{
+            //    mergedArray[k++] = array1[i++];
+            //}
 
-            while (j < array2.Length)
-            {
-                mergedArray[k++] = array2[j++];
-            }
+            //while (j < array2.Length)
+            //{
+            //    mergedArray[k++] = array2[j++];
+            //}
 
-            Console.WriteLine("Merged Array:");
-            foreach (int num in mergedArray)
-            {
-                Console.Write(num + " ");
-            }
+            //Console.WriteLine("Merged Array:");
+            //foreach (int num in mergedArray)
+            //{
+            //    Console.Write(num + " ");
+            //}
             #endregion
+            #region q13
+
+            int[] array = { 1, 2, 3, 2, 1, 5, 1, 3, 5, 2, 2 };
+            int[] visited = new int[array.Length];
+
+            Console.WriteLine("Duplications in matrix:");
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (visited[i] == 1)
+                    continue;
+
+                int count = 1;  
+                for (int j = i + 1; j < array.Length; j++)
+                {
+                    if (array[i] == array[j])
+                    {
+                        count++;
+                        visited[j] = 1; 
+                    }
+                }
+
+                Console.WriteLine($"Elment {array[i]} duplicated {count} times.");
+            }
         }
+        #endregion
     }
     }
+
