@@ -93,26 +93,49 @@
             //}
             #endregion
             #region q7
-        Console.Write("Enter a number to convert: ");
-            int decimalNumber = int.Parse(Console.ReadLine());
+            //Console.Write("Enter a number to convert: ");
+            //    int decimalNumber = int.Parse(Console.ReadLine());
 
-            string binaryNumber = "";
+            //    string binaryNumber = "";
 
-            if (decimalNumber == 0)
+            //    if (decimalNumber == 0)
+            //    {
+            //        binaryNumber = "0";
+            //    }
+            //    else
+            //    {
+            //        while (decimalNumber > 0)
+            //        {
+            //            binaryNumber = (decimalNumber % 2) + binaryNumber;
+            //            decimalNumber /= 2;
+            //        }
+            //    }
+
+            //    Console.WriteLine($"The Binary of {decimalNumber} is {binaryNumber}");
+            //}
+            #endregion
+            #region q8
+
+            Console.Write("Enter the size of the matrix (n): ");
+            int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Identity Matrix:");
+            for (int i = 0; i < n; i++)
             {
-                binaryNumber = "0";
-            }
-            else
-            {
-                while (decimalNumber > 0)
+                for (int j = 0; j < n; j++)
                 {
-                    binaryNumber = (decimalNumber % 2) + binaryNumber;
-                    decimalNumber /= 2;
-                }
-            }
 
-            Console.WriteLine($"The Binary of {decimalNumber} is {binaryNumber}");
+                    if (i == j)
+                    {
+                        Console.Write("1 ");
+                    }
+                    else
+                    {
+                        Console.Write("0 ");
+                    }
+                }
+                #endregion
+
+            }
         }
-        #endregion
     }
-    }
+}
