@@ -1,4 +1,6 @@
-﻿namespace Assignment_5_CSharp
+﻿using System.Threading.Channels;
+
+namespace Assignment_5_CSharp
 {
     internal class Program
     {
@@ -140,11 +142,20 @@
             //Console.WriteLine(substring);
             #endregion
             #region q10 
-            string firstString = "Hello";
-            string secondString = "World";
-            string combinedString = firstString + " " + secondString;
+            //string firstString = "Hello";
+            //string secondString = "World";
+            //string combinedString = firstString + " " + secondString;
 
-            Console.WriteLine(combinedString);
+            //Console.WriteLine(combinedString);
+            #endregion
+            #region q11
+            int[] numbers = { 1, 2, 3, 4 };
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++) {
+                sum+= numbers[i];
+            
+            }
+            Console.WriteLine(sum);
             #endregion
         }
     }
