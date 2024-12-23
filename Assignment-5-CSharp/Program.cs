@@ -255,36 +255,80 @@ namespace Assignment_5_CSharp
             //}
             #endregion
             #region q16
-        //    Console.WriteLine("Enter the size of the array:");
-        //    int size = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Enter the size of the array:");
+            //    int size = int.Parse(Console.ReadLine());
 
-        //    int[] array = new int[size];
-        //    Console.WriteLine("Enter the elements of the array:");
-        //    for (int i = 0; i < size; i++)
-        //    {
-        //        array[i] = int.Parse(Console.ReadLine());
-        //    }
+            //    int[] array = new int[size];
+            //    Console.WriteLine("Enter the elements of the array:");
+            //    for (int i = 0; i < size; i++)
+            //    {
+            //        array[i] = int.Parse(Console.ReadLine());
+            //    }
 
-        //    int maxDistance = 0;
-        //    for (int i = 0; i < size; i++)
-        //    {
-        //        for (int j = i + 1; j < size; j++)
-        //        {
-        //            if (array[i] == array[j])
-        //            {
-        //                int distance = j - i;
-        //                if (distance > maxDistance)
-        //                {
-        //                    maxDistance = distance;
-        //                }
-        //            }
-        //        }
-        //    }
+            //    int maxDistance = 0;
+            //    for (int i = 0; i < size; i++)
+            //    {
+            //        for (int j = i + 1; j < size; j++)
+            //        {
+            //            if (array[i] == array[j])
+            //            {
+            //                int distance = j - i;
+            //                if (distance > maxDistance)
+            //                {
+            //                    maxDistance = distance;
+            //                }
+            //            }
+            //        }
+            //    }
 
-        //    Console.WriteLine($"The longest distance between two equal cells is: {maxDistance}");
-        //}
-        #endregion
+            //    Console.WriteLine($"The longest distance between two equal cells is: {maxDistance}");
+            //}
+            #endregion
+            #region q17
+            Console.WriteLine("Enter the number of rows:");
+            int rows = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the number of columns:");
+            int columns = int.Parse(Console.ReadLine());
+
+
+            int[,] firstArray = new int[rows, columns];
+            int[,] secondArray = new int[rows, columns];
+
+
+            Console.WriteLine("Enter the elements of the first array:");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"Element [{i},{j}]: ");
+                    firstArray[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    secondArray[i, j] = firstArray[i, j];
+                }
+            }
+
+
+            Console.WriteLine("Elements of the second array:");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(secondArray[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
+        }
     }
-    }
+}
+
     
 
