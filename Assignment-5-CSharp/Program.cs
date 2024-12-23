@@ -326,6 +326,25 @@ namespace Assignment_5_CSharp
                 Console.WriteLine();
             }
             #endregion
+            #region q18
+           
+            Console.WriteLine("Enter the size of the array:");
+            int size = int.Parse(Console.ReadLine());
+
+            
+            int[] array = new int[size];
+            Console.WriteLine("Enter the elements of the array:");
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = int.Parse(Console.ReadLine());
+            }
+r
+            Console.WriteLine("Array in reverse order:");
+            for (int i = size - 1; i >= 0; i--)
+            {
+                Console.Write(array[i] + " ");
+            }
+            #endregion
         }
     }
 }
