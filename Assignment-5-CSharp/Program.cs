@@ -116,26 +116,29 @@
             #endregion
             #region q8
 
-            Console.Write("Enter the size of the matrix (n): ");
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine("Identity Matrix:");
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
+            //Console.Write("Enter the size of the matrix (n): ");
+            //int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Identity Matrix:");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
 
-                    if (i == j)
-                    {
-                        Console.Write("1 ");
-                    }
-                    else
-                    {
-                        Console.Write("0 ");
-                    }
-                }
-                #endregion
-
-            }
+            //        if (i == j)
+            //        {
+            //            Console.Write("1 ");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("0 ");
+            //        }
+            //    }
+            #endregion
+            #region q9
+            string inputString = "Hello Developer";
+            string substring = inputString.Substring(7, 4);
+            Console.WriteLine(substring);
+            #endregion
+        }
         }
     }
-}
