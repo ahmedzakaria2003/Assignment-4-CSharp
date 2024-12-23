@@ -149,13 +149,45 @@ namespace Assignment_5_CSharp
             //Console.WriteLine(combinedString);
             #endregion
             #region q11
-            int[] numbers = { 1, 2, 3, 4 };
-            int sum = 0;
-            for (int i = 0; i < numbers.Length; i++) {
-                sum+= numbers[i];
-            
+            //int[] numbers = { 1, 2, 3, 4 };
+            //int sum = 0;
+            //for (int i = 0; i < numbers.Length; i++) {
+            //    sum+= numbers[i];
+
+            //}
+            //Console.WriteLine(sum);
+            #endregion
+            #region q12
+            int[] array1 = { 1, 3, 5, 7 };
+            int[] array2 = { 2, 4, 6, 8};
+
+            int[] mergedArray = new int[array1.Length + array2.Length];
+
+            int i = 0, j = 0, k = 0;
+
+            while (i < array1.Length && j < array2.Length)
+            {
+                if (array1[i] < array2[j])
+                    mergedArray[k++] = array1[i++];
+                else
+                    mergedArray[k++] = array2[j++];
             }
-            Console.WriteLine(sum);
+
+            while (i < array1.Length)
+            {
+                mergedArray[k++] = array1[i++];
+            }
+
+            while (j < array2.Length)
+            {
+                mergedArray[k++] = array2[j++];
+            }
+
+            Console.WriteLine("Merged Array:");
+            foreach (int num in mergedArray)
+            {
+                Console.Write(num + " ");
+            }
             #endregion
         }
     }
