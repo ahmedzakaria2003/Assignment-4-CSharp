@@ -233,26 +233,26 @@ namespace Assignment_5_CSharp
             //Console.WriteLine($"Maximum element in the array: {max}");
             #endregion
             #region q15
-            int[] array = { 12, 35, 1, 10, 34 };
-                     int largest = array[0];  
-            int secondLargest = int.MinValue;
+        //    int[] array = { 12, 35, 1, 10, 34 };
+        //             int largest = array[0];  
+        //    int secondLargest = int.MinValue;
 
-            foreach (int num in array)
-            {
-                if (num > largest)
-                {
-                    secondLargest = largest;
-                    largest = num;
-                }
-                else if (num > secondLargest && num != largest)
-                {
-                    secondLargest = num;
-                }
-            }
+        //    foreach (int num in array)
+        //    {
+        //        if (num > largest)
+        //        {
+        //            secondLargest = largest;
+        //            largest = num;
+        //        }
+        //        else if (num > secondLargest && num != largest)
+        //        {
+        //            secondLargest = num;
+        //        }
+        //    }
 
            
-                Console.WriteLine($"The second largest element is: {secondLargest}");
-        }
+        //        Console.WriteLine($"The second largest element is: {secondLargest}");
+        //}
         #endregion
     }
     }
